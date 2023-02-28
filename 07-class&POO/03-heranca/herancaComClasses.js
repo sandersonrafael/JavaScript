@@ -29,7 +29,7 @@ class DispositivoEletronico {
 class Smartphone extends DispositivoEletronico {
     constructor(nome, cor, modelo) {
         super(nome)
-        // this.ligado não foi informado, mas já herdou do super()
+        // this.ligado não foi informado, mas já foi herdado do super()
         this.cor = cor
         this.modelo = modelo
     }
