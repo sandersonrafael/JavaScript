@@ -37,3 +37,18 @@ class Smartphone extends DispositivoEletronico {
 
 const s1 = new Smartphone('iPhone', 'Rose', 'XR 128GB')
 console.log(s1)
+
+class Tablet extends DispositivoEletronico {
+    constructor(nome, temWifi) {
+        super(nome)
+        this.temWifi = temWifi
+    }
+    
+    ligar() {
+        console.log('Você alterou o método ligar, não puxando mais por herança para este objeto')
+    }
+}
+
+const t1 = new Tablet('iPad', true)
+console.log(t1.ligado, '<- tirou do parent')
+t1.ligar()
