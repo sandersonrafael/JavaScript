@@ -1,0 +1,1 @@
+// Basicamente o closure é a capacidade da função de acessar o seu escopo léxico
