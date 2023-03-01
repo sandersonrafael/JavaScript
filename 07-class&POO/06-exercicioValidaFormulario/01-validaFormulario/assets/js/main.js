@@ -27,7 +27,7 @@ class validaFormulario {
         return ''
     }
 
-    validarCpf() {
+    validaCpf() {
         this['cpf'] = String(this['cpf']).replaceAll('.', '').replace('-', '')
         let cpfCorreto = this['cpf'].slice(0,-2)
         let mult = 10
@@ -96,7 +96,7 @@ document.querySelector('.button').onclick = () => {
 
     p[0].innerHTML += `${formulario.validaNome()}`
     p[1].innerHTML += `${formulario.validaSobrenome()}`
-    p[2].innerHTML += `${formulario.validarCpf()}`
+    p[2].innerHTML += `${formulario.validaCpf()}`
     p[3].innerHTML += `${formulario.validaUsuario()}`
     p[4].innerHTML += `${formulario.validaSenha()}`
     p[5].innerHTML += `${formulario.validaConfirmarSenha()}`
