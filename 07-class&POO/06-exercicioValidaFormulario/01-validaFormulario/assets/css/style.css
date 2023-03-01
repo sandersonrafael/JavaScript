@@ -2,6 +2,7 @@
     --primary-color: rgb(132, 195, 214);
     --primary-color-button: rgb(82, 189, 221);
     --primary-color-hover: rgb(61, 169, 202);
+    --primary-color-active: rgb(103, 179, 202);
 }
 
 * {
@@ -27,12 +28,12 @@ body {
     box-shadow: solid 123px black;
 }
 
-form input, form label, form button {
+form input, form label, form button, .button {
     display: block;
     width: 100%;
 }
 
-form button {
+form button, .button {
     height: 40px;
     border: none;
     background: var(--primary-color-button);
@@ -44,16 +45,29 @@ form button {
 }
 
 
-form input {
+form input, .button{
     font-size: 24px;
     height: 40px;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 form input:focus {
     outline: 1px solid var(--primary-color);
 }
 
-form button:hover {
+form button:hover, .button:hover{
     background-color: var(--primary-color-hover);
+}
+.button:active {
+    background-color: var(--primary-color-active) ;
+}
+p {
+    margin: 0;
+    padding: 0;
+    border:0;
+    font-size: 0.7em;
+    color: red
+}
+label {
+    margin-top: 5px;
 }
