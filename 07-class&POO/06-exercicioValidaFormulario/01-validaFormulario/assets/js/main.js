@@ -102,5 +102,5 @@ document.querySelector('.button').onclick = () => {
     p[5].innerHTML += `${formulario.validaConfirmarSenha()}`
 
     if (!(p[0].innerText || p[1].innerText || p[2].innerText || p[3].innerText || p[4].innerText || p[5].innerText))
-    setTimeout(() => alert('Formulário valido e usuário criado!'), 10)
+    setTimeout(() => alert('Formulário validado e usuário criado!'), 10)
 }
