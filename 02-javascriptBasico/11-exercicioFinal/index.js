@@ -17,4 +17,4 @@ function meuEscopo () {
     }
     form.addEventListener('submit', recebeEventoForm) // ao receber submit, aciona a função "recebeEventoForm"
 }
-meuEscopo()
+meuEscopo() 
