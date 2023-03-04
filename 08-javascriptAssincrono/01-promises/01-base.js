@@ -32,4 +32,4 @@ function esperaAi(msg, tempo) {
     })
 }
 
-esperaAi('Frase 1', aleatorio(0, 2))
+esperaAi('Frase 1', aleatorio(0, 2)) 
