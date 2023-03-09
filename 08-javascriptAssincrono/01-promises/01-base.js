@@ -26,10 +26,13 @@ function aleatorio(min, max) {
 function esperaAi(msg, tempo) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            console.log(msg)
-            resolve()
+            resolve(msg)
         }, tempo)
     })
 }
 
-esperaAi('Frase 1', aleatorio(0, 2)) 
+esperaAi('Frase 1', aleatorio(1, 3))
+    .then(resposta => {
+        console.log(resposta)
+    })
+    .catch()
