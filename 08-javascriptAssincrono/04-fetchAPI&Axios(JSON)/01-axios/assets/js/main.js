@@ -3,7 +3,7 @@
     .then(json => carregaElementos(json)) // pega o valor já convertido e manda para uma função criada posteriormente
  */
 
-    //substituindo por axios:
+    //substituindo por axios: necessário adicionar o script do axios no html
 
 axios('pessoas.json')
     .then(resposta => carregaElementos(resposta.data))
