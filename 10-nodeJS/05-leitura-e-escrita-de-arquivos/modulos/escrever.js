@@ -16,7 +16,7 @@ fs.writeFile(caminhoArquivo, 'Frase 1\n', { flag: 'a', encoding: 'utf-8' })
 // ao executar, será criado um arquivo com a frase: Frase 1
  */
 
-
+/* 
 // para transformar um objeto em json:
 const fs = require('fs').promises
 const path = require('path') 
@@ -30,4 +30,12 @@ const pessoas = [
 ]
 const json = JSON.stringify(pessoas, '', 1) // converte o objeto para json (objeto(de arrays), separação, número de linhas)
 
-fs.writeFile(caminhoArquivo, json, { flag: 'w' }) 
+fs.writeFile(caminhoArquivo, json, { flag: 'w' })
+ */
+
+// exportando para o app.js
+const fs = require('fs').promises
+
+module.exports = (caminho, dados) => {
+    fs.writeFile(caminho, dados, {flag: 'w'})
+}
