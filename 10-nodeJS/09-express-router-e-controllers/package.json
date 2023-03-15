@@ -1,5 +1,5 @@
 {
-  "name": "08-express-req-params-query-e-body",
+  "name": "09-express-router-e-controllers",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",

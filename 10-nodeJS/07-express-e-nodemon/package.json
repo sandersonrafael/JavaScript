@@ -1,5 +1,5 @@
 {
-  "name": "06-expressjs-introducao",
+  "name": "07-express-e-nodemon",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
