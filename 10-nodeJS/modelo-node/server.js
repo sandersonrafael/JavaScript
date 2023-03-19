@@ -19,6 +19,7 @@ const {middlewareG, checkCsrfError, csrfMiddleware} = require('./src/middlewares
 
 app.use(helmet())
 app.use(express.urlencoded({extended:true}))
+app.use(express.json())
 app.use(express.static('./public'))
 
 const sessionOptions = session({
