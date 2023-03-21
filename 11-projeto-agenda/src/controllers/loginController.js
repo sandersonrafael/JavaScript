@@ -10,7 +10,7 @@ exports.register = async (req, res) => {
         await login.register()
 
         if (login.errors.length > 0) {
-            req.flash('erros', login.errors)
+            req.flash('errors', login.errors)
             req.session.save(function() {
                 return res.redirect('/login/index')
             })
@@ -34,7 +34,7 @@ exports.login = async (req, res) => {
         await login.login()
 
         if (login.errors.length > 0) {
-            req.flash('erros', login.errors)
+            req.flash('errors', login.errors)
             req.session.save(function() {
                 return res.redirect('/login/index')
             })
