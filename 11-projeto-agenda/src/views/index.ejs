@@ -13,16 +13,29 @@
                 <div class="responsive-table">
                     <table class="table my-3">
                         <tr>
-                            <td>Nome</td>
-                            <td>Sobrenome</td>
-                            <td>99999999999</td>
-                            <td>email@dominio.com</td>
+                            <td class="text-center">Nome</td>
+                            <td class="text-center">Sobrenome</td>
+                            <td class="text-center">E-mail</td>
+                            <td class="text-center">Telefone</td>
+                            <td colspan="2"></td>
                         </tr>
+                        <% if (contatos.length > 0) { %>
+                        <% contatos.forEach(contato => { %>
+                            <tr>
+                                <td class="text-center"><%= contato.nome %></td>
+                                <td class="text-center"><%= contato.sobrenome %></td>
+                                <td class="text-center"><%= contato.email %></td>
+                                <td class="text-center"><%= contato.telefone %></td>
+                                <td class="text-center"><a href="/contato/index/<%= contato._id %>">Editar</a></td>
+                                <td><a class="text-danger" href="/contato/delete/<%= contato._id %>">Excluir</a></td>
+                            </tr>
+                            <% }) %>
+                            <% } else { %>
+                                <tr><td colspan="6" class="text-center">Sem contatos para exibir! Cadastre novos contatos e tente novamente.</td></tr>
+                            <% } %>
                     </table>
                 </div>
-
             </div>
-            <div class="col-lg-2"></div>
         </div>
     </div>
 

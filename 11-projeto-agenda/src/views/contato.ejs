@@ -32,8 +32,11 @@
                       <label>Telefone</label>
                       <input value="<%= contato.telefone %>" type="tel" class="form-control" name="telefone">
                     </div>
-
-                    <button type="submit" class="btn btn-primary">Salvar</button>
+                  <% if (contato._id) { %>
+                    <button type="submit" class="btn btn-primary">Salvar edições</button>
+                  <% } else { %>
+                    <button type="submit" class="btn btn-primary">Adicionar contato</button>
+                  <% } %>
                 </form>
 
             </div>
