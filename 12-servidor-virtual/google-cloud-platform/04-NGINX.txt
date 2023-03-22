@@ -1,0 +1,28 @@
+proxy reverso
+as requisições chegam no endereço (domínio ou servidor) e o nginx recebe na porta 80 (http) ou 443 (https), assim que chegar no endereço informado, o nginx redireciona para a porta 3000 do projeto, o node responde e volta para o cliente
+
+instalar nginx no root da máquina: 
+sudo apt install nginx
+
+verificar se já está iniciado:
+sudo systemctl status nginx
+
+agora já posso acessar o servidor criado no google cloud através do IP na página do ngix
+
+pegar arquivos auxiliares do professor e usar http se for IP normal
+se for domínio, pegar arquivo https e modificar o domínio do professor para o IP
+
+para criar o arquivo e colar o texto copiado:
+sudo nano /etc/nginx/sites-enabled/nomeDoDominio -> se não tiver, bota qualquer coisa
+
+visitar a pasta com o comando:
+cd /etc/nginx/sites-enabled
+
+apagar o default com o comando:
+sudo rm default
+
+para verificar se está ok:
+sudo nginx -t
+
+reiniciar o nginx:
+sudo systemctl restart nginx
