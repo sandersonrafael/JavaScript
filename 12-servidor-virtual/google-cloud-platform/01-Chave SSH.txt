@@ -1,0 +1,27 @@
+criar máquina no google cloud, uma vm. ir em ip e tornar o ip fixo (reservar o ip)
+
+Para gerar a chave, abrir o terminal e digitar:
+ssh-keygen -f ~/.ssh/nomeDaChave -t rsa -b 4096
+
+vai pedir uma senha, mas que é opcional. Enter 2x para não inserir senha.
+os arquivos gerados se encontrarão numa pasta .ssh na home, como oculta
+
+digita no terminal o comando:
+ls ~/.ssh/nomeDaChave* -> para encontrar todos arquivos que batem com o nome, usar * no final
+cat caminhoDaChave.pub
+
+copiar os dados que serão exibidos
+vai no google cloud, em metadados dentro do projeto, chaves ssh e cola a chave copiada
+copiar ip do servidor
+
+digita no terminal do pc pessoal para acessar a máquina virtual diretamente:
+ssh nomeDoUsuario@IP
+digita yes e enter
+
+a partir de agora, o meu terminal estará diretamente ligado ao da máquina virtual. Meu usuário será o nomeDeUsuario@instanciaDoCloud, rafael@cursojs, no caso
+
+atualizar tudo com: 
+sudo apt update
+sudo apt upgrade
+
+comando "exit" para sair do servidor

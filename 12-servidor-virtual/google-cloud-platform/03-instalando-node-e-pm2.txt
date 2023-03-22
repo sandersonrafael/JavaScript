@@ -1,0 +1,42 @@
+Node.JS -> comandos npm e etc
+
+comandos para instalação do node:
+sudo apt install curl -y
+curl -sL https://deb.nodesource.com/setup_18.x | sudo bash -
+sudo apt install nodejs -y
+
+se a máquina não for compatível com alguma versão, mudar o 18.x para a casa da versão, como 17.x
+
+PM2 -> gerencia as aplicações no servidor
+
+comando para instalação
+sudo npm install -g pm2 -> global
+
+para iniciar o pm2:
+pm2 start /caminho/da/aplicação/nomeDoServer.js
+
+para listar todos os pm2 em atividade:
+pm2 list
+
+se tiver mais de um projeto, é importante usar outra porta que não a 3000
+se precisar editar na máquina virtual, entrar na pasta do projeto e digitar:
+nano server.js -> vai permitir editar o arquivo como texto
+
+para parar o pm2 no projeto, usar:
+pm2 stop server.js
+
+para que sempre que a máquina for reiniciada, o serviço ser startado junto, usar o comando:
+pm2 startup
+copiar e colar o comando que vai ser exibido após digitar o pm2 startup
+ 
+Freeze a process list on reboot via:
+pm2 save
+
+Remove init script via:
+pm2 unstartup systemd
+
+para testar o server:
+curl http://localhost:3000 -> o terminal vai exibir o index em html
+
+verificar questões de segurança da base de dados posteriormente
+

@@ -1,0 +1,74 @@
+clique direito na pasta que deseja iniciar repositório e abrir terminal
+comando para help do git:
+git
+
+comando para instalar o git:
+sudo apt install git
+
+comandos para configurar usuário:
+git config --global user.email "e-maildeusuario"
+git config --global user.name "nome do usuário"
+
+comando para criar iniciar o git na pasta, criando uma pasta .git:
+git init
+
+comando para criar um .gitignore:
+nano .gitignore
+
+digitar os nomes do arquivo, ctrl + o para salvar e ctrl + x para sair
+
+comando para exibir arquivos na pasta
+ls ou ls -la (exibe todos, inclusive ocultos)
+
+comando para adicionar todos arquivos da pasta ao git
+git add .
+
+para subir as alterações:
+git commit -am 'mensagem do commit'
+
+abrir terminal no servidor com: ssh ip
+
+mkdir nome-da-pasta -> cria pasta
+
+fazer:
+mkdir repo-agenda -> funcionará como um repositório dentro do servidor
+mkdir agenda -> criará a pasta do projeto
+
+comando para entrar na pasta:
+cd nomedapasta
+entrar na pasta repo-agenda -> cd repo-agenda
+
+criar repositório do git na pasta:
+git init --bare
+
+comando para voltar a pasta:
+cd ..
+
+entrar na pasta agenda -> cd agenda
+digitar o comando git init
+
+comando para adicionar repositório remoto -> deve ser executado dentro da pasta do projeto e deve ser colocado como repositório remoto a pasta criada como repo-nomeDoProjeto, neste caso, foi a pasta repo-agenda
+
+git remote add origin /home/rafael/repo-agenda/ -> origin é o nome e depois é o caminho onde ficará o remote
+
+após isto, visitar ir na minha máquina pessoal e adicionar o git remote usando o ip do servidor fixo
+
+git remote add agenda 35.247.206.125:repo-agenda -> usa o servidor:nomeDaPasta
+
+git push agenda master -> envia o master para a pasta que foi selecionada anteriormente
+
+dentro da pasta agenda na máquina virtual:
+git pull agenda master -> puxa todos arquivos do repositório para dentro da pasta agenda
+
+para enviar para a máquina virtual as atualizações, usar o comando na máquina pessoa, na pasta do projeto:
+git add .
+git commit -am 'nome do commit'
+git push nomeDoProjeto master -> neste caso, git push agenda master
+
+sempre que quiser atualizar lá, faz o comando na pasta agenda na maquina virtual:
+git pull nomeDoProjeto master -> no caso, git pull agenda master
+
+BASICAMENTE: CADA COMMIT VAI FICAR SALVO NO REPOSITÓRIO (repo-agenda na VM, já que não estamos usando o github), POREM, PARA PUXAR DENTRO DO PROJETO NA MÁQUINA VIRTUAL, PRECISAMOS ENTRAR NA PASTA DO PROJETO (agenda) E DAR O COMANDO: git pull agenda master
+
+
+
