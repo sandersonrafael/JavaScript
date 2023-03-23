@@ -14,5 +14,7 @@ module.exports = {
         indent: ['error', 4],
         // 'no-console': 'off',
         // 'no-unused-vars': 'off',
+        'import/no-extraneous-dependencies': 'off',
+        'class-methods-use-this': 'off',
     },
 };
