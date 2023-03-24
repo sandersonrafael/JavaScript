@@ -16,5 +16,7 @@ module.exports = {
         // 'no-unused-vars': 'off',
         'import/no-extraneous-dependencies': 'off',
         'class-methods-use-this': 'off',
+        'quote-props': 'off',
+        'import/first': 'off',
     },
 };
