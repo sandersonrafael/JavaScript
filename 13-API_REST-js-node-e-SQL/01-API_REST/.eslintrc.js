@@ -18,5 +18,6 @@ module.exports = {
         'class-methods-use-this': 'off',
         'quote-props': 'off',
         'import/first': 'off',
+        'no-param-reassign': 'off',
     },
 };
