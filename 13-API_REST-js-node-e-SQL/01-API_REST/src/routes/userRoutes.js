@@ -4,7 +4,7 @@ import loginRequired from '../middlewares/loginRequired';
 
 const router = new Router();
 
-// Não deveriam existir:
+// Não deveriam existir (falha de segurança / o usuário teria acesso aos dados):
 // router.get('/', loginRequired, userController.index); // lista usuários
 // router.get('/:id', userController.show); // lista usuário
 
