@@ -19,5 +19,6 @@ module.exports = {
         'quote-props': 'off',
         'import/first': 'off',
         'no-param-reassign': 'off',
+        'linebreak-style': 'off',
     },
 };

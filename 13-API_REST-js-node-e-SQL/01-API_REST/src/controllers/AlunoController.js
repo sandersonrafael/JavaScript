@@ -8,7 +8,7 @@ class AlunoController {
 
     async store(req, res) {
         try {
-            const aluno = Aluno.create(req.body);
+            const aluno = await Aluno.create(req.body);
 
             return res.json(aluno);
         } catch (e) {
@@ -92,7 +92,7 @@ class AlunoController {
                 });
             }
 
-            const alunoAtualizado = aluno.update(req.body);
+            const alunoAtualizado = await aluno.update(req.body);
 
             return res.json(alunoAtualizado);
         } catch (e) {
