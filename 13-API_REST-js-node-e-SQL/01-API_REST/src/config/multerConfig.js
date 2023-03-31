@@ -14,7 +14,7 @@ export default {
 
     storage: multer.diskStorage({
         destination: (req, file, cb) => { // cb = callback
-            cb(null, resolve(__dirname, '..', '..', 'uploads')); // caminho onde será salvo o arquivo, na pasta uploads
+            cb(null, resolve(__dirname, '..', '..', 'uploads', 'images')); // caminho onde será salvo o arquivo, na pasta uploads
         }, // ^ primeiro parâmetro é o null para caso apresente erro
         filename: (req, file, cb) => {
             cb(null, `${Date.now()}_${aleatorio()}${extname(file.originalname)}`); // para que não ocorra problema, cada foto terá um nome que será o horário atual, com um milissegundo específico
