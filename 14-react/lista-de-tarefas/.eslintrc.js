@@ -20,5 +20,6 @@ module.exports = {
         indent: ['error', 4],
         'react/jsx-filename-extension': 'off',
         'react/jsx-indent': 'off',
+        'react/state-in-constructor': 'off',
     },
 };
