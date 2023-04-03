@@ -25,6 +25,7 @@
     font-size: 20px;
     border: 1px solic #ccc;
     min-width: 80%;
+    border-radius: 5px 0 0 5px;
 }
 
 .form button[type="submit"] {
@@ -36,5 +37,53 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 3px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+.form button[type="submit"]:hover {
+    background: #c7384e;
+    transition: all 500ms;
+}
+
+.tarefas {
+    margin-top: 30px;
+}
+
+.tarefas li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.tarefas li:hover {
+    background: #51c5de;
+    border-radius: 5px;
+    transition: all 500ms;
+}
+
+.tarefas li .edit {
+    margin-right: 15px;
+    color: #51c5de;
+}
+
+.tarefas li .delete {
+    margin-right: 15px;
+    color: #f04c64;
+}
+
+.tarefas li:hover .edit,
+.tarefas li:hover .delete {
+    color: black;
+}
+
+.tarefas li .edit,
+.tarefas li .delete {
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.tarefas li span {
+    display: flex;
+    align-items: center;
 }
