@@ -21,5 +21,8 @@ module.exports = {
         'react/jsx-filename-extension': 'off',
         'react/jsx-indent': 'off',
         'react/state-in-constructor': 'off',
+        'linebreak-style': 'off',
+        'react/jsx-indent-props': ['error', 4],
+        'class-methods-use-this': 'off',
     },
 };
