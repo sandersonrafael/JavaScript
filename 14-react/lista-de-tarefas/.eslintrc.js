@@ -24,5 +24,7 @@ module.exports = {
         'linebreak-style': 'off',
         'react/jsx-indent-props': ['error', 4],
         'class-methods-use-this': 'off',
+        'import/no-extraneous-dependencies': 'off',
+        'react/forbid-prop-types': 'off',
     },
 };
