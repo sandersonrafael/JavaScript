@@ -1,8 +1,5 @@
 module.exports = {
-    env: {
-        browser: true,
-        es2021: true,
-    },
+    env: { browser: true, es2021: true },
     extends: [
         'plugin:react/recommended',
         'airbnb',
@@ -10,12 +7,8 @@ module.exports = {
     ],
     parser: '@babel/eslint-parser',
     parserOptions: {
-        ecmaFeatures: {
-            jsx: true,
-        },
-        babelOptions: {
-            presets: ['@babel/preset-react'],
-        },
+        ecmaFeatures: { jsx: true },
+        babelOptions: { presets: ['@babel/preset-react'] },
         ecmaVersion: 'latest',
         requireConfigFile: false,
         sourceType: 'module',
