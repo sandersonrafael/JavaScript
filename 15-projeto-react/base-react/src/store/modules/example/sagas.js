@@ -7,8 +7,8 @@ const requisicao = () =>
   // eslint-disable-next-line no-unused-vars
   new Promise((resolve, reject) => {
     setTimeout(() => {
-      reject();
-    }, 2000);
+      resolve();
+    }, 600);
   });
 
 function* exampleRequest() {
