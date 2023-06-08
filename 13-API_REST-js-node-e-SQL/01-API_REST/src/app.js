@@ -16,6 +16,7 @@ import fotoRoutes from './routes/fotoRoutes';
 const whiteList = [
     'https://escola-react.sandersonrafae.xyz',
     'http://localhost:3000',
+    'http://localhost:3001',
 ];
 
 const corsOptions = {

@@ -16,6 +16,7 @@ var _fotoRoutes = require('./routes/fotoRoutes'); var _fotoRoutes2 = _interopReq
 const whiteList = [
     'https://escola-react.sandersonrafae.xyz',
     'http://localhost:3000',
+    'http://localhost:3001',
 ];
 
 const corsOptions = {
