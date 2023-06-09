@@ -8,7 +8,7 @@ const router = new (0, _express.Router)();
 // router.get('/', loginRequired, userController.index); // lista usuários
 // router.get('/:id', userController.show); // lista usuário
 
-router.post('/', _loginRequired2.default, _UserController2.default.store); // não será mais possível criar usuário, pois precisa estar logado
+router.post('/', _UserController2.default.store); // não será mais possível criar usuário, pois precisa estar logado
 router.put('/', _loginRequired2.default, _UserController2.default.update);
 router.delete('/', _loginRequired2.default, _UserController2.default.delete);
 exports. default = router;
